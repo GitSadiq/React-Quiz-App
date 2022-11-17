@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(80deg, rgba(53,65,87,1) 0%, rgba(50,71,112,1) 16%, rgba(51,71,110,1) 81%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: #334567;
+  text-shadow: 0.01vh 0.01vh rgba(0, 0, 0, 0.599);
+}
+h1{
+  color: white;
+  text-shadow: 0.4vh 0.4vh 5px black;
+ 
+}
+.Start-div{
+  width: 85%;
+  background-color: rgba(255, 255, 255, 0.93);
+  border: 2px solid #334567;
+  border-radius: 2vh;
+  text-align: center;
+  padding: 2vh;
+  box-shadow: 0.5vh 0.5vh 0.4vh #26334c;
+}
+.start-button{
+  width: calc(100px + 10vmin);
+  height: calc(25px + 3vmin);
+  font-size: calc(9px + 2vmin);
+  font-weight: 600;
+  text-shadow: 0.1vh 0.1vh rgba(0, 0, 0, 0.599);
+  cursor: pointer;
+  color: white;
+  border: 2px solid #191a315e;
+  border-radius: 5vh;
+  background-color: #334567;
+  box-shadow: 0.2vh 0.5vh 1vh black;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+.start-button:hover{
+  width: calc(105px + 10vmin);
+  height: calc(28px + 3vmin);
+  color: #334567;
+  background-color: white;
+  border: 0.5vh solid #334567;
+}
+.App-Body{
+  width: 95%;
+  background-color: rgba(255, 255, 255, 0.93);
+  border: 2px solid #334567;
+  border-radius: 2vh;
+  box-shadow: 0.5vh 0.5vh 0.4vh #26334c;
+}
+@media screen and (min-width: 480px) {
+  .App-Body{
+    width: 65%;
+  }
+  .Start-div{
+    width: 65%;
+  }
+}
+.App-Content{
+  width: 95%;
+  margin: 2vh auto;
+   /* border: 2px solid black; */
+}
+.QuestNum{
+  margin: 2% 0% 0% 0% !important;
+  font-weight: 700 !important;
+}
+.Question{
+  font-weight: 500;
+  margin: 2%;
+  padding-left: calc(2px + 2vmin);
+  /* border: 2px solid black; */
+}
+.OptDiv{
+  margin: 4% 3% 2% 2%;
+  /* border: 2px solid black; */
+}
+.Options{
+  font-size: calc(8px + 2vmin);
+  font-weight: 500;
+  width: 95%;
+  margin: 1%;
+  border: 2px solid #334567;
+  border-radius: 2vh;
+  padding-left: 2%;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.Options:hover{
+  background-color: #334567c3;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.SelectedAnswer{
+  font-size: calc(8px + 2vmin);
+  font-weight: 500;
+  width: 95%;
+  margin: 1%;
+  border: 2px solid #606b7e76;
+  border-radius: 2vh;
+  padding-left: 2%;
+  padding-bottom: 2px;
+  cursor: pointer;
+  background-color: #334567;
+  color: white;
+  box-shadow: 0.3vh 0.3vh 0.1vh #050505;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Next-Finish-Button{
+  float: right;
+  margin: 1% 0% 4% 0%;
+  margin-right: calc(20px + 1vmax) !important;
+  width: calc(60px + 6vmin);
+  height: calc(25px + 3vmin);
+  font-size: calc(7px + 3vmin);
+  font-weight: 600;
+  text-shadow: 0.1vh 0.1vh rgba(0, 0, 0, 0.599);
+  cursor: pointer;
+  color: white;
+  border: 2px solid #191a315e;
+  border-radius: 5vh;
+  background-color: #334567;
+  box-shadow: 0.2vh 0.5vh 1vh black;
+}
+.Next-Finish-Button:hover{
+  margin-right: calc(20px + 0.8vmax) !important;
+  color: #334567;
+  background-color: white;
+  border: 0.5vh solid #334567;
+}
+.Finish-Button{
+  width: calc(60px + 10vmin) !important;
+  height: calc(25px + 3vmin);
+}
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+P{
+  font-weight: 600;
+  text-shadow: 0.1vh 0.1vh rgba(0, 0, 0, 0.599);
 }
