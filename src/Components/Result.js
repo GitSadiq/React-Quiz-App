@@ -1,7 +1,7 @@
 import "../App.css";
 function Result(props) {
     const attemptQuiz = () => {
-        window.location.href = "http://localhost:3000/"
+        window.location.href = "https://gitsadiq.github.io/React-Quiz-App.github.io/"
     }
 
     return (
