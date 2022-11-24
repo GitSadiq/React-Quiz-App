@@ -1,7 +1,10 @@
 import "../App.css";
 function Result(props) {
     const attemptQuiz = () => {
-        window.location.href = "https://gitsadiq.github.io/React-Quiz-App.github.io/"
+        props.indexCount(0)
+        props.scoreCount(0)
+        props.checkResults(true)
+        props.checkStartQuiz(true)
     }
 
     return (

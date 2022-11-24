@@ -10,7 +10,7 @@ function Question(props) {
   }, [props.question])
 
   const pickAnswer = (e, index) => {
-    const updatedQuestionObject = { ...questionObject };
+    const updatedQuestionObject = JSON.parse(JSON.stringify(questionObject))
     updatedQuestionObject.Options[index].selected = true;
     updatedQuestionObject.Options.forEach((item, i) => {
       if (i !== index) {
@@ -18,6 +18,7 @@ function Question(props) {
       }
     });
     setquestionObject(updatedQuestionObject)
+    props.getAnswer(updatedQuestionObject.Options[index].value)
   }
   return (
     <div>
